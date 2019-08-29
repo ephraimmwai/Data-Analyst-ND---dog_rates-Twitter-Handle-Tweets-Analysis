@@ -9,9 +9,18 @@ The data wrangling process has been broken down into three main steps:
  
 ### 1. Gather
 There are 3 main data sources for this project; 
-**I. Excel data in csv format**. This is downloadable directly from the project resources and saved locally as a csv file named twitter-archive-enhanced.csv. I have used this file to get all the tweet ids used in the twitter API explained in data source III explained below. 
-**II. TSV file format**. A file url is provided and downloaded using python requests library. I have saved the file locally as image-predictions.tsv. This contains the image predictions from a neural network. 
-**III. Twitter API**. Using the twitter API I have queried all tweets data by tweet id (from step I) in a JSON format and saved into a txt file named tweet_json.txt. The next step is reading this JSON format by looping over the text lines to create a csv file namely twitter_archive_master.csv  
+
+**I. Excel data in csv format**. 
+
+This is downloadable directly from the project resources and saved locally as a csv file named twitter-archive-enhanced.csv. I have used this file to get all the tweet ids used in the twitter API explained in data source III explained below. 
+
+**II. TSV file format**.
+
+A file url is provided and downloaded using python requests library. I have saved the file locally as image-predictions.tsv. This contains the image predictions from a neural network. 
+
+**III. Twitter API**.
+
+Using the twitter API I have queried all tweets data by tweet id (from step I) in a JSON format and saved into a txt file named tweet_json.txt. The next step is reading this JSON format by looping over the text lines to create a csv file namely twitter_archive_master.csv  
 A copy is made for the datasets for use in the next step. 
 ### 2. Assess 
 Assessing in this case includes visually and programmatically looking for both messy and dirty data issues in the 3 datasets gathered. Issues I was looking for include but not limited to data duplication, missing data, wrong data formats and data tidiness The assessment comments have been categorized to Quality issues and Tidiness issues as in the table below. 
